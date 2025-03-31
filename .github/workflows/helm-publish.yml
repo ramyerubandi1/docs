@@ -22,7 +22,8 @@ jobs:
       - name: Package Helm Chart
         run: |
           
-          helm package nginx -d /c/Users/Admin/opsgear/docs
+          helm package charts/nginx -d docs/
+
 
           helm repo index docs --url https://ramyerubandi1.github.io/docs/
 
