@@ -29,8 +29,8 @@ jobs:
 
       - name: Commit and Push Changes
         run: |
-          git config --global user.name "Manoj Vardhineni"
-          git config --global user.email "Manoj.Vardhineni@wolterskluwer.com"
+          git config --global user.name "ramy"
+          git config --global user.email "rmrbnd@gmail.com"
           git add docs/
           git commit -m "Auto-publish Helm chart" || echo "No changes to commit"
           git push
