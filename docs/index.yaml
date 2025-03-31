@@ -3,12 +3,12 @@ entries:
   nginx:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-03-31T22:30:05.118594774Z"
+    created: "2025-03-31T22:30:13.280293713Z"
     description: A Helm chart for Kubernetes
-    digest: b510754e3c428e270cd0f3c852ae1b7deb8c2e8f2e43dce4b44f5d06b9ab3b56
+    digest: f7d9be7f6a6ae0233edf9d2781ec20211f145b671158443a430ec50ff6d65308
     name: nginx
     type: application
     urls:
     - https://ramyerubandi1.github.io/docs/nginx-0.1.0.tgz
     version: 0.1.0
-generated: "2025-03-31T22:30:05.117959538Z"
+generated: "2025-03-31T22:30:13.27968464Z"
