@@ -1,0 +1,25 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: helm-rollback-job
+  annotations:
+    "helm.sh/hook": post-upgrade  # ✅ Corrected annotation
+    "helm.sh/hook-delete-policy": before-hook-creation,hook-succeeded
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: rollback
+        image: bitnami/kubectl:latest
+        command:
+        - /bin/sh
+        - -c
+        - |
+          echo "Checking if upgrade succeeded..."
+          if ! kubectl rollout status deployment/nginx -n test; then
+            echo "⚠️ Upgrade failed! Rolling back..."
+            helm rollback nginx 0
+          else
+            echo "✅ Upgrade successful!"
+
