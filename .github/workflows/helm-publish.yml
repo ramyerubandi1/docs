@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GH_PAT }}
 
       - name: Install Helm
         run: |
@@ -21,10 +23,7 @@ jobs:
 
       - name: Package Helm Chart
         run: |
-          
           helm package charts/nginx -d docs/
-
-
           helm repo index docs --url https://ramyerubandi1.github.io/docs/
 
       - name: Commit and Push Changes
@@ -33,5 +32,4 @@ jobs:
           git config --global user.email "rmrbnd@gmail.com"
           git add docs/
           git commit -m "Auto-publish Helm chart" || echo "No changes to commit"
-          git push
-
+          git push origin main
