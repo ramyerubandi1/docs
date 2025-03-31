@@ -21,8 +21,8 @@ jobs:
 
       - name: Package Helm Chart
         run: |
-          mkdir -p docs/
-          helm package charts/mychart -d docs/
+          
+          helm package nginx -d docs/
           helm repo index docs --url https://ramyerubandi1.github.io/docs/
 
       - name: Commit and Push Changes
