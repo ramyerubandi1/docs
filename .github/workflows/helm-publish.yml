@@ -4,9 +4,8 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
+    paths:
+      - 'charts/nginx/**'  # Only trigger when changes occur in this directory
 
 jobs:
   build:
@@ -14,35 +13,33 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GH_PAT }}
 
       - name: Install Helm
         run: |
           curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
 
-      - name: Get current chart version
-        id: get_version
+      - name: Check if Helm chart has changed
+        id: changes
         run: |
-          VERSION=$(grep 'version:' charts/nginx/Chart.yaml | awk '{print $2}')
-          echo "Current chart version: $VERSION"
-          echo "VERSION=$VERSION" >> $GITHUB_ENV
-
-      - name: Increment Chart Version
-        id: increment_version
-        run: |
-          VERSION=$(echo ${{ env.VERSION }} | awk -F. -v OFS=. '{$NF++; print $0}')
-          echo "New version: $VERSION"
-          sed -i "s/version: ${{ env.VERSION }}/version: $VERSION/" charts/nginx/Chart.yaml
-          echo "VERSION=$VERSION" >> $GITHUB_ENV
+          if git diff --name-only HEAD^ HEAD | grep -q "^charts/nginx/"; then
+            echo "CHANGED=true" >> $GITHUB_ENV
+          else
+            echo "CHANGED=false" >> $GITHUB_ENV
+          fi
 
       - name: Package Helm Chart
+        if: env.CHANGED == 'true'
         run: |
-          helm package charts/nginx -d docs/ --version ${{ env.VERSION }}
+          helm package charts/nginx -d docs/
           helm repo index docs --url https://ramyerubandi1.github.io/docs/
 
       - name: Commit and Push Changes
+        if: env.CHANGED == 'true'
         run: |
           git config --global user.name "ramy"
           git config --global user.email "rmrbnd@gmail.com"
           git add docs/
-          git commit -m "Auto-publish Helm chart version ${{ env.VERSION }}" || echo "No changes to commit"
-          git push https://github-actions:${{ secrets.GH_PAT }}@github.com/ramyerubandi1/docs.git
+          git commit -m "Auto-publish Helm chart" || echo "No changes to commit"
+          git push origin main || echo "No changes to push"
