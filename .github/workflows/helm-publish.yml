@@ -22,29 +22,17 @@ jobs:
       - name: Increment Chart Version
         id: version
         run: |
-          # Extract the current version from Chart.yaml
           VERSION=$(grep '^version:' charts/nginx/Chart.yaml | awk '{print $2}')
-          
-          # Split version into major, minor, and patch
           IFS='.' read -r -a VERSION_ARRAY <<< "$VERSION"
           PATCH=${VERSION_ARRAY[2]}
-          
-          # Increment the patch version
           NEW_PATCH=$((PATCH + 1))
-          
-          # Update the version in Chart.yaml (maintain major.minor and increment patch)
           NEW_VERSION="${VERSION_ARRAY[0]}.${VERSION_ARRAY[1]}.$NEW_PATCH"
           echo "New version: $NEW_VERSION"
-          
-          # Replace version in Chart.yaml
           sed -i "s/^version: $VERSION$/version: $NEW_VERSION/" charts/nginx/Chart.yaml
 
       - name: Package Helm Chart
         run: |
-          # Package the chart with the new version
           helm package charts/nginx -d docs/
-          
-          # Generate or update the index file
           helm repo index docs --url https://ramyerubandi1.github.io/docs/
 
       - name: Commit and Push Changes
@@ -54,4 +42,7 @@ jobs:
           
           git add docs/ charts/nginx/Chart.yaml
           git commit -m "Auto-publish Helm chart version $NEW_VERSION" || echo "No changes to commit"
-          git push
+          
+          # Use the GitHub PAT for authentication
+          git remote set-url origin https://github-actions:${{ secrets.GH_PAT }}@github.com/ramyerubandi1/docs.git
+          git push origin main
