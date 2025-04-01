@@ -41,9 +41,12 @@ jobs:
           git config --global user.name "ramy"
           git config --global user.email "rmrbnd@gmail.com"
           
-          git pull --rebase origin main  # Pull the latest changes before committing
+          git fetch origin main  # Fetch the latest changes from the remote repository
+          git reset --soft origin/main  # Reset local branch to match the remote branch
           
           git add docs/
           git commit -m "Auto-publish Helm chart" || echo "No changes to commit"
-          git push origin main
+          
+          git push origin main --force-with-lease  # Push changes safely
+
 
