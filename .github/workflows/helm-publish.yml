@@ -64,10 +64,16 @@ jobs:
 
       - name: Commit and Push Changes
         run: |
-          git config --global user.name "ramy"
-          git config --global user.email "rmrbnd@gmail.com"
-          git add charts/nginx/Chart.yaml docs/
-          git commit -m "Auto-publish Helm chart version ${{ env.VERSION }}" || echo "No changes to commit"
-          
-          # Use GITHUB_TOKEN for authentication (built-in token provided by GitHub Actions)
-          git push origin main || echo "No changes to push"
+          # Check if changes were made in the charts directory
+          git diff --exit-code charts/nginx/Chart.yaml || {
+            echo "Changes detected, committing and pushing new version."
+
+            git config --global user.name "ramy"
+            git config --global user.email "rmrbnd@gmail.com"
+
+            git add charts/nginx/Chart.yaml docs/
+            git commit -m "Auto-publish Helm chart version ${{ env.VERSION }}" || echo "No changes to commit"
+
+            # Prevent workflow trigger loop by using GITHUB_TOKEN to push changes
+            git push origin main || echo "No changes to push"
+          }
