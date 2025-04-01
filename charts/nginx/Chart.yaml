@@ -1,1 +1,5 @@
-404: Not Found
+apiVersion: v2
+name: my-nginx-chart
+description: A Helm chart for Kubernetes to deploy NGINX
+version: 0.1.23
+appVersion: "1.19.6"
