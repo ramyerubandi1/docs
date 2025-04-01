@@ -31,20 +31,20 @@ jobs:
       - name: Increment Chart Version
         id: increment_version
         run: |
-          # Generate a version based on current date or commit hash for uniqueness
-          VERSION=$(date +'%Y%m%d%H%M%S')  # or use git rev-parse HEAD for commit hash based version
+          # Increment the patch version by 1
+          VERSION=$(echo ${{ env.VERSION }} | awk -F. -v OFS=. '{$NF++; print $0}')
           echo "New version: $VERSION"
           
-          # Update version in Chart.yaml
-          sed -i "s/version: .*/version: $VERSION/" charts/nginx/Chart.yaml
+          # Update the version in the Chart.yaml file
+          sed -i "s/version: ${{ env.VERSION }}/version: $VERSION/" charts/nginx/Chart.yaml
           echo "VERSION=$VERSION" >> $GITHUB_ENV
 
       - name: Package Helm Chart
         run: |
-          # Package the chart with the new version
+          # Package the Helm chart with the updated version
           helm package charts/nginx -d docs/ --version ${{ env.VERSION }}
           
-          # Re-index the chart repo
+          # Generate index for the repo
           helm repo index docs --url https://ramyerubandi1.github.io/docs/
 
       - name: Commit and Push Changes
@@ -54,5 +54,5 @@ jobs:
           git add docs/
           git commit -m "Auto-publish Helm chart version ${{ env.VERSION }}" || echo "No changes to commit"
           
-          # Push changes using GITHUB_TOKEN
+          # Use GITHUB_TOKEN for authentication (built-in token provided by GitHub Actions)
           git push origin main || echo "No changes to push"
