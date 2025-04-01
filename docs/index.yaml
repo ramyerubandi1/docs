@@ -3,7 +3,7 @@ entries:
   nginx:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.894846044Z"
+    created: "2025-04-01T07:47:35.748316715Z"
     description: A Helm chart for Kubernetes
     digest: d4aee27fc73ec484d3c2a7f4fe36b4fb76b3be99b1cdc2361dfd5e80aeb7e380
     name: nginx
@@ -13,7 +13,7 @@ entries:
     version: "20250401064358"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.894139361Z"
+    created: "2025-04-01T07:47:35.747510447Z"
     description: A Helm chart for Kubernetes
     digest: be667acc3cf5ee4d92bb472b188b2945cb75d95757c7d773913818cfcc1f9e99
     name: nginx
@@ -23,7 +23,7 @@ entries:
     version: "20250401064357"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.893090067Z"
+    created: "2025-04-01T07:47:35.746264636Z"
     description: A Helm chart for Kubernetes
     digest: cb0c69c3f2a4bf06a9853d2940e14721c8f395584ce2a3462dc5f96bc2280023
     name: nginx
@@ -33,7 +33,7 @@ entries:
     version: "20250401064356"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.892634939Z"
+    created: "2025-04-01T07:47:35.745687383Z"
     description: A Helm chart for Kubernetes
     digest: 4115850b4251aefb8fc926f8e703269278b0e60b47c9aba549e8f06dd866d705
     name: nginx
@@ -43,7 +43,7 @@ entries:
     version: "20250401064355"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.892185833Z"
+    created: "2025-04-01T07:47:35.744933232Z"
     description: A Helm chart for Kubernetes
     digest: dfef376d53df9086b1c6c31d8b7a61623423d67ca1930a90406382d16b15dce3
     name: nginx
@@ -53,7 +53,7 @@ entries:
     version: "20250401064354"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.891815132Z"
+    created: "2025-04-01T07:47:35.744167019Z"
     description: A Helm chart for Kubernetes
     digest: 50943112a110dd854884bf165ef328d3088ce2a71eb9934bb6623c0d860a79aa
     name: nginx
@@ -63,7 +63,7 @@ entries:
     version: "20250401064353"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.891451235Z"
+    created: "2025-04-01T07:47:35.74342984Z"
     description: A Helm chart for Kubernetes
     digest: 9b6faf19c795df2df13b525536f28c4b91353dd946e06b8a555720743f2e59d9
     name: nginx
@@ -73,7 +73,7 @@ entries:
     version: "20250401064352"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.891075685Z"
+    created: "2025-04-01T07:47:35.742696338Z"
     description: A Helm chart for Kubernetes
     digest: cf0d6c35d8318fcc9bdfaae4f670435574a21fdba0594a2015807b6cc993b752
     name: nginx
@@ -83,7 +83,7 @@ entries:
     version: "20250401064351"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.890717699Z"
+    created: "2025-04-01T07:47:35.741999284Z"
     description: A Helm chart for Kubernetes
     digest: 02367d0cb2a8303c2abd20921808515c8ed44522926d16586932d41a4f6fb134
     name: nginx
@@ -93,7 +93,7 @@ entries:
     version: "20250401064350"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.890357297Z"
+    created: "2025-04-01T07:47:35.741294465Z"
     description: A Helm chart for Kubernetes
     digest: f55de3b3c6b7c678e8d16e0e3d99f09fb0bd1437cf5e62f3bab17c24db2ae110
     name: nginx
@@ -103,7 +103,7 @@ entries:
     version: "20250401064349"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.889981968Z"
+    created: "2025-04-01T07:47:35.740602471Z"
     description: A Helm chart for Kubernetes
     digest: 0700728c49019cc01138f17757f01a0d05d9132b5393edbb470bf3f9c59e5d26
     name: nginx
@@ -113,7 +113,7 @@ entries:
     version: "20250401064348"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.889623811Z"
+    created: "2025-04-01T07:47:35.739859351Z"
     description: A Helm chart for Kubernetes
     digest: cbe040dc6c36a7311a4ec777e6dd8fa965886ddcaf77594729c164028486d261
     name: nginx
@@ -123,7 +123,7 @@ entries:
     version: "20250401064347"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.889262368Z"
+    created: "2025-04-01T07:47:35.739077077Z"
     description: A Helm chart for Kubernetes
     digest: 90f203fa1695a9a17077816e28c8bda081b37903d78b3aea5e997a98d88283a8
     name: nginx
@@ -133,7 +133,7 @@ entries:
     version: "20250401064346"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.8888874Z"
+    created: "2025-04-01T07:47:35.738310724Z"
     description: A Helm chart for Kubernetes
     digest: 7603eaac9667577d382c343baf22e0ca53f8d62415d1218e6b28c577d7f3d2fb
     name: nginx
@@ -143,7 +143,7 @@ entries:
     version: "20250401064345"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.888526458Z"
+    created: "2025-04-01T07:47:35.737606076Z"
     description: A Helm chart for Kubernetes
     digest: 81c9d5ac4528639b5ccedb58ed43511c684516a2bea6e06d6c7830d8bf758099
     name: nginx
@@ -153,7 +153,7 @@ entries:
     version: "20250401064344"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.888147171Z"
+    created: "2025-04-01T07:47:35.736822059Z"
     description: A Helm chart for Kubernetes
     digest: 5535f9298b75c2649dfeb2896bdb4fe1598091312869b28b697ba41dac8a4fd9
     name: nginx
@@ -163,7 +163,7 @@ entries:
     version: "20250401064343"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.887783153Z"
+    created: "2025-04-01T07:47:35.736024738Z"
     description: A Helm chart for Kubernetes
     digest: 3729ae2a58f62881ca7066e3ddb631828f4f9598cf55bc95660eb197002cd50e
     name: nginx
@@ -173,7 +173,7 @@ entries:
     version: "20250401064342"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.887413114Z"
+    created: "2025-04-01T07:47:35.735249147Z"
     description: A Helm chart for Kubernetes
     digest: 6830e7c720c05b5dac4efd5ed45e4ecd685d09bb9196394fd3571c0713ed3f47
     name: nginx
@@ -183,7 +183,7 @@ entries:
     version: "20250401064341"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.887005265Z"
+    created: "2025-04-01T07:47:35.734336019Z"
     description: A Helm chart for Kubernetes
     digest: cc488d7203fb0ed0944f66cd532786b907887c2a7c3cbc4bad885d78a7270f57
     name: nginx
@@ -193,7 +193,7 @@ entries:
     version: "20250401064340"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.886622802Z"
+    created: "2025-04-01T07:47:35.732576671Z"
     description: A Helm chart for Kubernetes
     digest: 830c4c863653e76c4b8599e95268e824b7a4b0f6f56c21fee22b52539184d4c9
     name: nginx
@@ -203,7 +203,7 @@ entries:
     version: "20250401064339"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.886124005Z"
+    created: "2025-04-01T07:47:35.731858354Z"
     description: A Helm chart for Kubernetes
     digest: b09c2358220556c1b684661d8e0ab215fff523abaff6632d986c925eeb4351d8
     name: nginx
@@ -213,7 +213,7 @@ entries:
     version: "20250401064338"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.885362486Z"
+    created: "2025-04-01T07:47:35.731083815Z"
     description: A Helm chart for Kubernetes
     digest: f5de14c40568ba9003722f40f50043e4cd81a62289a95e0313f14bf1e80ece04
     name: nginx
@@ -223,7 +223,7 @@ entries:
     version: "20250401064337"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.884689533Z"
+    created: "2025-04-01T07:47:35.730332289Z"
     description: A Helm chart for Kubernetes
     digest: 8759ba7a2a5cc68b40ef9d33e7f91fce0164d228893d8080aa48f51450732f27
     name: nginx
@@ -233,7 +233,7 @@ entries:
     version: "20250401064336"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.884332228Z"
+    created: "2025-04-01T07:47:35.729601582Z"
     description: A Helm chart for Kubernetes
     digest: 61d9b1917422cdf99a59307650690090233733f6668cdec89f5d967a1ca87d07
     name: nginx
@@ -243,7 +243,7 @@ entries:
     version: "20250401064335"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.88395753Z"
+    created: "2025-04-01T07:47:35.728896383Z"
     description: A Helm chart for Kubernetes
     digest: c0b4810fb4ea6f8266daf7335cf71de8686e407f72381e0b1b3e539d8ef1f204
     name: nginx
@@ -253,7 +253,7 @@ entries:
     version: "20250401064334"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.883599403Z"
+    created: "2025-04-01T07:47:35.728174022Z"
     description: A Helm chart for Kubernetes
     digest: 1c2330ecf1d488f1ec4986e375695885f887353f558b7c4dd9f70e296651cc2d
     name: nginx
@@ -263,7 +263,7 @@ entries:
     version: "20250401064333"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.88323819Z"
+    created: "2025-04-01T07:47:35.727441972Z"
     description: A Helm chart for Kubernetes
     digest: 3e2a63b80a5b44e1c4d7b85e918e02f3b08272daa7fa69a33396d50ca886bd3a
     name: nginx
@@ -273,7 +273,7 @@ entries:
     version: "20250401064332"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.882821043Z"
+    created: "2025-04-01T07:47:35.726682191Z"
     description: A Helm chart for Kubernetes
     digest: 392d85ae17b5773b26fa0eb14a837b73928973190d80c6bb4b3eb1e4abf23102
     name: nginx
@@ -283,7 +283,7 @@ entries:
     version: "20250401064331"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.882463137Z"
+    created: "2025-04-01T07:47:35.725925365Z"
     description: A Helm chart for Kubernetes
     digest: 40d4900321d74831d3a6320b6eef74c6b9c7d7ae3c12ed5f0cc76149bada4cf2
     name: nginx
@@ -293,7 +293,7 @@ entries:
     version: "20250401064330"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.882086936Z"
+    created: "2025-04-01T07:47:35.725151107Z"
     description: A Helm chart for Kubernetes
     digest: ce2c63e4df16146a2cbbccda15d9bbc3ae372f4f6b17dbb12803fe7aa08541bd
     name: nginx
@@ -303,7 +303,7 @@ entries:
     version: "20250401064319"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.881723479Z"
+    created: "2025-04-01T07:47:35.724411523Z"
     description: A Helm chart for Kubernetes
     digest: 7a04cb2f82e5774eaff3be1c7823a9ee47ec479982e022822617beb29671a301
     name: nginx
@@ -313,7 +313,7 @@ entries:
     version: "20250401064311"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.881359131Z"
+    created: "2025-04-01T07:47:35.723695464Z"
     description: A Helm chart for Kubernetes
     digest: 4a86006b0ee6613f97e0cf4188d85cc64759b7a76d394e456ef3fe0c0c11bd30
     name: nginx
@@ -323,7 +323,7 @@ entries:
     version: "20250401064301"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.880952373Z"
+    created: "2025-04-01T07:47:35.722985105Z"
     description: A Helm chart for Kubernetes
     digest: ffb58410e548b1fdc65b385631398ba217461db0b1cd43fb2c09b809e90e964f
     name: nginx
@@ -333,7 +333,7 @@ entries:
     version: "20250401064246"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.880591892Z"
+    created: "2025-04-01T07:47:35.722243748Z"
     description: A Helm chart for Kubernetes
     digest: 764cd72f69b6b5227076206cb23e098659a6cd69648d245290f38a1abc41d107
     name: nginx
@@ -343,7 +343,7 @@ entries:
     version: "20250401064229"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.880226942Z"
+    created: "2025-04-01T07:47:35.721518632Z"
     description: A Helm chart for Kubernetes
     digest: 90ff959b305d21e0ff33f1afb168d37195f4e2a59a267a2230d43b64649e1bec
     name: nginx
@@ -353,7 +353,7 @@ entries:
     version: "20250401064219"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.87984463Z"
+    created: "2025-04-01T07:47:35.720804686Z"
     description: A Helm chart for Kubernetes
     digest: e54c09c226a94b5565a952f08b7d5854dfddf906f040368aec5c448a805c29e4
     name: nginx
@@ -363,7 +363,7 @@ entries:
     version: "20250401064207"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.879480051Z"
+    created: "2025-04-01T07:47:35.720066215Z"
     description: A Helm chart for Kubernetes
     digest: 9e873af02b35075aecf68214780a50107272bb3846b9207f21d39de7333f0e37
     name: nginx
@@ -373,7 +373,7 @@ entries:
     version: "20250401064155"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.879079996Z"
+    created: "2025-04-01T07:47:35.71911214Z"
     description: A Helm chart for Kubernetes
     digest: e009228793e8529a53125ba332c1c7a6c6841987ddd090ac23b009cb9326b61e
     name: nginx
@@ -383,7 +383,7 @@ entries:
     version: "20250401064148"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.878703665Z"
+    created: "2025-04-01T07:47:35.718094126Z"
     description: A Helm chart for Kubernetes
     digest: 877f3a420f5cb319049153e726a43f1942a36e98ec67180d963eec5c2a257f34
     name: nginx
@@ -393,7 +393,7 @@ entries:
     version: "20250401064141"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.8782608Z"
+    created: "2025-04-01T07:47:35.71772215Z"
     description: A Helm chart for Kubernetes
     digest: 6c7942fad3bb3516461a5f7678ad4b170e2366045471c3ec32541e50296fd5fe
     name: nginx
@@ -403,7 +403,7 @@ entries:
     version: "20250401064129"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.877120923Z"
+    created: "2025-04-01T07:47:35.717320389Z"
     description: A Helm chart for Kubernetes
     digest: 2deaeb7ede27110fdbd39edf3372745fcc7472cc1d1488666ed470fa428c108e
     name: nginx
@@ -413,7 +413,7 @@ entries:
     version: "20250401064119"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.876750493Z"
+    created: "2025-04-01T07:47:35.716947752Z"
     description: A Helm chart for Kubernetes
     digest: 28256d390661a7039a87c85cd44e18a95ebd3e4ca21135673f1c0af1b1571cc9
     name: nginx
@@ -423,7 +423,7 @@ entries:
     version: "20250401064110"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.876376436Z"
+    created: "2025-04-01T07:47:35.716579583Z"
     description: A Helm chart for Kubernetes
     digest: 2068404c4bcb784efc58189d184e2929d186341a6769b73a6ee9872ca5eb0c6a
     name: nginx
@@ -433,7 +433,7 @@ entries:
     version: "20250401064102"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.876000897Z"
+    created: "2025-04-01T07:47:35.716179875Z"
     description: A Helm chart for Kubernetes
     digest: c1694cd28189c50b17e34fa62336f98009bbd60123386403f8e79ecb8a5a57f3
     name: nginx
@@ -443,7 +443,7 @@ entries:
     version: "20250401064052"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.875642409Z"
+    created: "2025-04-01T07:47:35.715809272Z"
     description: A Helm chart for Kubernetes
     digest: 0757186fbc4a9c30466a325fe521344d070ac9c2045d3c76e86c71aa5e74d5b7
     name: nginx
@@ -453,7 +453,7 @@ entries:
     version: "20250401064040"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.875278581Z"
+    created: "2025-04-01T07:47:35.715354802Z"
     description: A Helm chart for Kubernetes
     digest: 79dbc63258eca490762b39e1e5b5f867ac749ce8cf3fe1411ecee3463b61d260
     name: nginx
@@ -463,7 +463,7 @@ entries:
     version: "20250401064029"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.874893684Z"
+    created: "2025-04-01T07:47:35.714993416Z"
     description: A Helm chart for Kubernetes
     digest: 2003c386b61c323bd8714993642b0de2e53edbc36625c90bd5370e29471a817b
     name: nginx
@@ -473,7 +473,7 @@ entries:
     version: "20250401064022"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.874529667Z"
+    created: "2025-04-01T07:47:35.714628994Z"
     description: A Helm chart for Kubernetes
     digest: 02ca409fc19c91cb3ae3cc949f6db6afcb7395ab11f4c1dd9c981586a929fa53
     name: nginx
@@ -483,7 +483,7 @@ entries:
     version: "20250401064014"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.874142556Z"
+    created: "2025-04-01T07:47:35.714218897Z"
     description: A Helm chart for Kubernetes
     digest: d54f39dc923f6489fae16ecaa239b2df5b96723930c9e556fc4bae2a6177ecdb
     name: nginx
@@ -493,7 +493,7 @@ entries:
     version: "20250401063959"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.873784118Z"
+    created: "2025-04-01T07:47:35.713852642Z"
     description: A Helm chart for Kubernetes
     digest: 5d32e11d39b2967695023144d443ff3d7e8676411da71bde0b74979b8ba88bbf
     name: nginx
@@ -503,7 +503,7 @@ entries:
     version: "20250401063945"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.873422014Z"
+    created: "2025-04-01T07:47:35.713482269Z"
     description: A Helm chart for Kubernetes
     digest: 57d8799d31f9bd2eed0201772204be7b3ed187ecb8d8597ac9fd9c01df92b8ff
     name: nginx
@@ -513,7 +513,7 @@ entries:
     version: "20250401063931"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.873043138Z"
+    created: "2025-04-01T07:47:35.713090506Z"
     description: A Helm chart for Kubernetes
     digest: 023ee8cfd16b65d23c0b7dd0aef1633064ecc098167655a9ec346eeaf17e856f
     name: nginx
@@ -523,7 +523,7 @@ entries:
     version: "20250401063919"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.87266286Z"
+    created: "2025-04-01T07:47:35.712712198Z"
     description: A Helm chart for Kubernetes
     digest: 6162a232ae16976325290de98dc218fd0f85df0a61f8d3fe3f3764ced86f6d34
     name: nginx
@@ -533,7 +533,7 @@ entries:
     version: "20250401063911"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.872296207Z"
+    created: "2025-04-01T07:47:35.712297953Z"
     description: A Helm chart for Kubernetes
     digest: 1f4add8649bc52dfba75703c58a422fb1239ef798bc1222bbed97042ec83cf04
     name: nginx
@@ -543,7 +543,7 @@ entries:
     version: "20250401063856"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.871906752Z"
+    created: "2025-04-01T07:47:35.711926158Z"
     description: A Helm chart for Kubernetes
     digest: a24d030c1a4d2faf298f673ed0e3d2ec925ccc0be14e440cad9086047457d396
     name: nginx
@@ -553,7 +553,7 @@ entries:
     version: "20250401063841"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.871532435Z"
+    created: "2025-04-01T07:47:35.711539615Z"
     description: A Helm chart for Kubernetes
     digest: 16bbe0a0eccdbc68e030c737583f812915d4b4bcc6b728756e3c99c48ea9272c
     name: nginx
@@ -563,7 +563,7 @@ entries:
     version: "20250401063830"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.871120988Z"
+    created: "2025-04-01T07:47:35.710869074Z"
     description: A Helm chart for Kubernetes
     digest: 11b95e48ade0b8f59277b0e7b2ca961ff7a719bdeb96dabe10743fcdb8c8943a
     name: nginx
@@ -573,7 +573,17 @@ entries:
     version: "20250401063821"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.870702839Z"
+    created: "2025-04-01T07:47:35.710029002Z"
+    description: A Helm chart for Kubernetes
+    digest: c0982292263aaef18a1b1d15f8f96742e045b9122e8214d3a9a43fe30965d9c5
+    name: nginx
+    type: application
+    urls:
+    - https://ramyerubandi1.github.io/docs/nginx-0.1.99.tgz
+    version: 0.1.99
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-04-01T07:47:35.709278148Z"
     description: A Helm chart for Kubernetes
     digest: 2e141f93b5cf8ef0736baff2499b9725d040733e705de63d4122849fd94cd936
     name: nginx
@@ -583,7 +593,7 @@ entries:
     version: 0.1.98
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.869583964Z"
+    created: "2025-04-01T07:47:35.708903537Z"
     description: A Helm chart for Kubernetes
     digest: ab19072fb093666462756283b22a9db391b1a52912add82686dfd70935f8db7a
     name: nginx
@@ -593,7 +603,7 @@ entries:
     version: 0.1.97
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.869224464Z"
+    created: "2025-04-01T07:47:35.708535789Z"
     description: A Helm chart for Kubernetes
     digest: 07104509c6d3509749711aafa5240d26968668bc48ff523f8e8ba3f7d22da795
     name: nginx
@@ -603,7 +613,7 @@ entries:
     version: 0.1.96
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.868848124Z"
+    created: "2025-04-01T07:47:35.708139127Z"
     description: A Helm chart for Kubernetes
     digest: 4fbb708a936d804b7540353f25824ef9a4446dae85ecf5380bc78c267787ee04
     name: nginx
@@ -613,7 +623,7 @@ entries:
     version: 0.1.95
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.868487692Z"
+    created: "2025-04-01T07:47:35.707772982Z"
     description: A Helm chart for Kubernetes
     digest: 7d116c55ea3a3648505dd7d64cdcde11a5448b18251b5cb1baed672482201476
     name: nginx
@@ -623,7 +633,7 @@ entries:
     version: 0.1.94
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.868114197Z"
+    created: "2025-04-01T07:47:35.707382482Z"
     description: A Helm chart for Kubernetes
     digest: 34fd58a256dacd66e9a1d3ca633ac6cdf4ba78a305daf0e7a9b38f55c7e13725
     name: nginx
@@ -633,7 +643,7 @@ entries:
     version: 0.1.93
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.867757713Z"
+    created: "2025-04-01T07:47:35.706946796Z"
     description: A Helm chart for Kubernetes
     digest: 0255873054860446e7a8f9554c5c033e6659bf1812d9489d6f9d2a57ea5220f7
     name: nginx
@@ -643,7 +653,7 @@ entries:
     version: 0.1.92
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.86740162Z"
+    created: "2025-04-01T07:47:35.706557659Z"
     description: A Helm chart for Kubernetes
     digest: 3c959c5084aa6dfe0b8d8fedfae6612b39491539848918c4ecd7f18cd49aa869
     name: nginx
@@ -653,7 +663,7 @@ entries:
     version: 0.1.91
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.867026722Z"
+    created: "2025-04-01T07:47:35.706148052Z"
     description: A Helm chart for Kubernetes
     digest: a364d26976c38a60d78b8e8203f16c889e568d2aea1c17ba56b3d3d09dc9d74b
     name: nginx
@@ -663,7 +673,7 @@ entries:
     version: 0.1.90
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.866304657Z"
+    created: "2025-04-01T07:47:35.705320194Z"
     description: A Helm chart for Kubernetes
     digest: 2e0d2e24be048b7527c1041e03be994af88199fec965540e634fc431c0e6ae07
     name: nginx
@@ -673,7 +683,7 @@ entries:
     version: 0.1.89
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.865929678Z"
+    created: "2025-04-01T07:47:35.704810671Z"
     description: A Helm chart for Kubernetes
     digest: 4938411678b4227713f71c705389a35d9ac0d3fcc4ccad886e97bfad60f53419
     name: nginx
@@ -683,7 +693,7 @@ entries:
     version: 0.1.88
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.865569477Z"
+    created: "2025-04-01T07:47:35.704437863Z"
     description: A Helm chart for Kubernetes
     digest: efd5086a7d9235bd8ba1493e5d077075e7b23716e513b70de262bcda7d6f451f
     name: nginx
@@ -693,7 +703,7 @@ entries:
     version: 0.1.87
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.865199909Z"
+    created: "2025-04-01T07:47:35.704048345Z"
     description: A Helm chart for Kubernetes
     digest: c6891970ed1f08d13145d9f6fed6d500030603462fb0b651001390053a3fdf08
     name: nginx
@@ -703,7 +713,7 @@ entries:
     version: 0.1.86
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.864820923Z"
+    created: "2025-04-01T07:47:35.703670999Z"
     description: A Helm chart for Kubernetes
     digest: fbcbad6c07c3bb43c0b4797c0da888cb883c8b2b8e8f55663f423965fca64d3f
     name: nginx
@@ -713,7 +723,7 @@ entries:
     version: 0.1.85
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.864457466Z"
+    created: "2025-04-01T07:47:35.703255682Z"
     description: A Helm chart for Kubernetes
     digest: d97e21b22a1855ba8fb49e01b0154ba55a593b9d411f89cd090bfca6ab1c8cd3
     name: nginx
@@ -723,7 +733,7 @@ entries:
     version: 0.1.84
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.86405642Z"
+    created: "2025-04-01T07:47:35.7028539Z"
     description: A Helm chart for Kubernetes
     digest: 22580da668bf2b300590062a6d4eca25ea9e9d31d33c18b5aac78d5755281e02
     name: nginx
@@ -733,7 +743,7 @@ entries:
     version: 0.1.83
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.863685168Z"
+    created: "2025-04-01T07:47:35.702046785Z"
     description: A Helm chart for Kubernetes
     digest: 152d75f164ac014b2716e99d55e4cee16c783246016aee8f6de04a9aec73374f
     name: nginx
@@ -743,7 +753,7 @@ entries:
     version: 0.1.82
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.863298819Z"
+    created: "2025-04-01T07:47:35.701251668Z"
     description: A Helm chart for Kubernetes
     digest: e2679e126757751f53f5305d483b6dda414c48b3d86d73d96f68b108e987d9d8
     name: nginx
@@ -753,7 +763,7 @@ entries:
     version: 0.1.81
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.862593515Z"
+    created: "2025-04-01T07:47:35.700875284Z"
     description: A Helm chart for Kubernetes
     digest: b8aea918c4d77034a0b27afc8f637f75d1e345b282904811f0d5dd4c765c918b
     name: nginx
@@ -763,7 +773,7 @@ entries:
     version: 0.1.80
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.8613557Z"
+    created: "2025-04-01T07:47:35.700111225Z"
     description: A Helm chart for Kubernetes
     digest: e00696115da2721697277285a620e4424db771904c16b31e40880b7ae4e95c09
     name: nginx
@@ -773,7 +783,7 @@ entries:
     version: 0.1.79
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.860976664Z"
+    created: "2025-04-01T07:47:35.699743186Z"
     description: A Helm chart for Kubernetes
     digest: c5178168c2ddfbb8370904c9e4676f5369f729d185f693d8003e9a2fb11ac599
     name: nginx
@@ -783,7 +793,7 @@ entries:
     version: 0.1.78
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.860619539Z"
+    created: "2025-04-01T07:47:35.699356643Z"
     description: A Helm chart for Kubernetes
     digest: 4eec66bb9ede33c48ab496d37bdad084b30b2631509b520106acec560c6c60f6
     name: nginx
@@ -793,7 +803,7 @@ entries:
     version: 0.1.77
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.860260149Z"
+    created: "2025-04-01T07:47:35.69898624Z"
     description: A Helm chart for Kubernetes
     digest: 5668307cbd54b56c9e550a767d9e88cc646cd1c039306495347fb0ac7b6f0249
     name: nginx
@@ -803,7 +813,7 @@ entries:
     version: 0.1.76
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.859886814Z"
+    created: "2025-04-01T07:47:35.698624774Z"
     description: A Helm chart for Kubernetes
     digest: 0f7e66596760408e49c0a59e163a02e4906ad0bb272e8b256b516e261011408c
     name: nginx
@@ -813,7 +823,7 @@ entries:
     version: 0.1.75
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.859529078Z"
+    created: "2025-04-01T07:47:35.69824308Z"
     description: A Helm chart for Kubernetes
     digest: e49cf4fa1b194941e060caa33ed99b736e337f6bcf32e88f38abbc14c676c77a
     name: nginx
@@ -823,7 +833,7 @@ entries:
     version: 0.1.74
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.859154911Z"
+    created: "2025-04-01T07:47:35.697879249Z"
     description: A Helm chart for Kubernetes
     digest: dd078cf4d0667aa68aa12877b850011a178117e5d68ef76b70df4452a9037a6f
     name: nginx
@@ -833,7 +843,7 @@ entries:
     version: 0.1.73
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.858797916Z"
+    created: "2025-04-01T07:47:35.697511922Z"
     description: A Helm chart for Kubernetes
     digest: ded62db884b777473c22b6f482603a9cf3a5964d4a5b5e6ffddb9aef55aeff60
     name: nginx
@@ -843,7 +853,7 @@ entries:
     version: 0.1.72
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.85844017Z"
+    created: "2025-04-01T07:47:35.697127894Z"
     description: A Helm chart for Kubernetes
     digest: bf17f4f88c470cdf8567c9958bfa5cb6e4e16c4dfa046143ed83ee29dcddb1e8
     name: nginx
@@ -853,7 +863,7 @@ entries:
     version: 0.1.71
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.858063378Z"
+    created: "2025-04-01T07:47:35.696758853Z"
     description: A Helm chart for Kubernetes
     digest: 3bc1b7b096489d9acc6e607828e51df14efe985f213fdd6ad5338cdaa37b615d
     name: nginx
@@ -863,7 +873,7 @@ entries:
     version: 0.1.70
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.857333369Z"
+    created: "2025-04-01T07:47:35.695994464Z"
     description: A Helm chart for Kubernetes
     digest: 1594c9ca06af8f92fd8205692c2165ff306042c82e9c69765402f3ae0a7fa268
     name: nginx
@@ -873,7 +883,7 @@ entries:
     version: 0.1.69
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.85695266Z"
+    created: "2025-04-01T07:47:35.695610445Z"
     description: A Helm chart for Kubernetes
     digest: 012f82091c34f15058553aa241f7ca479fcd1994b1504f5396bb3a81b5d96a73
     name: nginx
@@ -883,7 +893,7 @@ entries:
     version: 0.1.68
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.856579365Z"
+    created: "2025-04-01T07:47:35.69517439Z"
     description: A Helm chart for Kubernetes
     digest: 8afba4465e4ea29c26821e5849b6a80962886a3329cf3fe61d0867dd84f0aa29
     name: nginx
@@ -893,7 +903,7 @@ entries:
     version: 0.1.67
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.856203485Z"
+    created: "2025-04-01T07:47:35.694465739Z"
     description: A Helm chart for Kubernetes
     digest: 5466b258953c36b4aa43f6bab699b9258fa9daf32d5cc1b7d2ada02e1696ef2f
     name: nginx
@@ -903,7 +913,7 @@ entries:
     version: 0.1.66
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.855805864Z"
+    created: "2025-04-01T07:47:35.693542542Z"
     description: A Helm chart for Kubernetes
     digest: c379c4dfb55954e7a8ae9d83c35fa7df43e5fe081de13b03883f56678fbbfa39
     name: nginx
@@ -913,7 +923,7 @@ entries:
     version: 0.1.65
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.855229811Z"
+    created: "2025-04-01T07:47:35.693159155Z"
     description: A Helm chart for Kubernetes
     digest: fe8982a25cf4ff4b2e355471ecabc40420e9cdd0f72f5525039285429e77cc98
     name: nginx
@@ -923,7 +933,7 @@ entries:
     version: 0.1.64
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.854252751Z"
+    created: "2025-04-01T07:47:35.69278236Z"
     description: A Helm chart for Kubernetes
     digest: a70bed778bf738e881b0a3ec748c68eaf266de689e4ee79d2705ad807f2c6a23
     name: nginx
@@ -933,7 +943,7 @@ entries:
     version: 0.1.63
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.853875258Z"
+    created: "2025-04-01T07:47:35.69240836Z"
     description: A Helm chart for Kubernetes
     digest: c14a5e107f89f6eb16c85931497b886679eb133239ca7a80e7db6be2c12fd50d
     name: nginx
@@ -943,7 +953,7 @@ entries:
     version: 0.1.62
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.853516701Z"
+    created: "2025-04-01T07:47:35.692020555Z"
     description: A Helm chart for Kubernetes
     digest: 665d06b2aa39f80988fd008db59e811c56b8ddab065d813350310394edd2a056
     name: nginx
@@ -953,7 +963,7 @@ entries:
     version: 0.1.61
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.853134358Z"
+    created: "2025-04-01T07:47:35.69164888Z"
     description: A Helm chart for Kubernetes
     digest: 485ddfa5603181664f4316102629fc2493a5bffb95f590412fcdabd11c43e5b2
     name: nginx
@@ -963,7 +973,7 @@ entries:
     version: 0.1.60
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.852411863Z"
+    created: "2025-04-01T07:47:35.690892144Z"
     description: A Helm chart for Kubernetes
     digest: 9793ee1b27e491ed97c696367b7d2b4a94beaff1c6e4a4a536915908cc7bb625
     name: nginx
@@ -973,7 +983,7 @@ entries:
     version: 0.1.59
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.852033228Z"
+    created: "2025-04-01T07:47:35.690522403Z"
     description: A Helm chart for Kubernetes
     digest: 809198ea14a2bbdbad0d9cd2a56b33ee6c0797c92cc0ccfac27bc40b5d761542
     name: nginx
@@ -983,7 +993,7 @@ entries:
     version: 0.1.58
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.85167485Z"
+    created: "2025-04-01T07:47:35.690130179Z"
     description: A Helm chart for Kubernetes
     digest: 8c104a4a7afc6e6e1518389bc07a5e3a71a6700d3507fe36567ff15ba19082a3
     name: nginx
@@ -993,7 +1003,7 @@ entries:
     version: 0.1.57
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.851312616Z"
+    created: "2025-04-01T07:47:35.689747102Z"
     description: A Helm chart for Kubernetes
     digest: 85d91f41c92171f1b59c5614d22c3a4efa6e567a825095f0e188053477e13560
     name: nginx
@@ -1003,7 +1013,7 @@ entries:
     version: 0.1.56
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.850936355Z"
+    created: "2025-04-01T07:47:35.689347625Z"
     description: A Helm chart for Kubernetes
     digest: c710941e475e3bd95b4d7fb471eaba1f29c96417a9fa4181191073b2b7640dd7
     name: nginx
@@ -1013,7 +1023,7 @@ entries:
     version: 0.1.55
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.850572507Z"
+    created: "2025-04-01T07:47:35.688951945Z"
     description: A Helm chart for Kubernetes
     digest: 92251864655381bfc07e4193371f6e72b2119cb9c61ba8491da6ea1fb4545006
     name: nginx
@@ -1023,7 +1033,7 @@ entries:
     version: 0.1.54
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.850196246Z"
+    created: "2025-04-01T07:47:35.688543741Z"
     description: A Helm chart for Kubernetes
     digest: 602ab5128f77a7002680054358745ab2d7b8dca6cc6bd89c9ffa958ec3b6e960
     name: nginx
@@ -1033,7 +1043,7 @@ entries:
     version: 0.1.53
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.849813073Z"
+    created: "2025-04-01T07:47:35.687807063Z"
     description: A Helm chart for Kubernetes
     digest: 6a5f63aa6bc9d86a5159724a52a84bb0281b9152c9badd23a5dcce077442b45e
     name: nginx
@@ -1043,7 +1053,7 @@ entries:
     version: 0.1.52
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.849445087Z"
+    created: "2025-04-01T07:47:35.650292692Z"
     description: A Helm chart for Kubernetes
     digest: 3a657540c47781edfbf6c4eb78691eb769b5fef15ced024b43f24862454c968f
     name: nginx
@@ -1053,7 +1063,7 @@ entries:
     version: 0.1.51
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.849052216Z"
+    created: "2025-04-01T07:47:35.649921818Z"
     description: A Helm chart for Kubernetes
     digest: 7c3c59ded8ef259d9106eb107994d73c067b8c0639abd6e17ddfdb789b9074fb
     name: nginx
@@ -1063,7 +1073,7 @@ entries:
     version: 0.1.50
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.847549187Z"
+    created: "2025-04-01T07:47:35.64916382Z"
     description: A Helm chart for Kubernetes
     digest: 7b39f9a0effc607635578ee2ced1fa0cc6c71ff3aea5a59cba048b20a7a57e96
     name: nginx
@@ -1073,7 +1083,7 @@ entries:
     version: 0.1.49
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.847186802Z"
+    created: "2025-04-01T07:47:35.648796102Z"
     description: A Helm chart for Kubernetes
     digest: 71dddd5dafae0511b29dbadb759c40a6b0bd342fc558f99ac75153cb865d4e89
     name: nginx
@@ -1083,7 +1093,7 @@ entries:
     version: 0.1.48
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.846807575Z"
+    created: "2025-04-01T07:47:35.648424638Z"
     description: A Helm chart for Kubernetes
     digest: a24960d862a76be0bca7506de40d2e06726b97e5cc20cc07d2e7cd2e1dc9c685
     name: nginx
@@ -1093,7 +1103,7 @@ entries:
     version: 0.1.47
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.846443868Z"
+    created: "2025-04-01T07:47:35.648038285Z"
     description: A Helm chart for Kubernetes
     digest: b15c27cefc3b49e2e61ab60073756d13e63cc78f9bf14b9109be600a9c927454
     name: nginx
@@ -1103,7 +1113,7 @@ entries:
     version: 0.1.46
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.846068379Z"
+    created: "2025-04-01T07:47:35.647669685Z"
     description: A Helm chart for Kubernetes
     digest: d8de7dee4d81f29e5783d7207ae16ce167b14a16a6fd8ca7801c04eacdfc7227
     name: nginx
@@ -1113,7 +1123,7 @@ entries:
     version: 0.1.45
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.845693661Z"
+    created: "2025-04-01T07:47:35.647281018Z"
     description: A Helm chart for Kubernetes
     digest: 76bdb84ed079eb46add5274199b7fe22f42d2986102725dc6386e6395b784217
     name: nginx
@@ -1123,7 +1133,7 @@ entries:
     version: 0.1.44
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.845325525Z"
+    created: "2025-04-01T07:47:35.646906858Z"
     description: A Helm chart for Kubernetes
     digest: 88be2b694f9a89e9b5bed777617c1a4cec6c948a8f997d46b34de7111fd242c7
     name: nginx
@@ -1133,7 +1143,7 @@ entries:
     version: 0.1.43
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.844950968Z"
+    created: "2025-04-01T07:47:35.646531977Z"
     description: A Helm chart for Kubernetes
     digest: 74752b907c08c25e5e138e17481ac3857be6d01513fcf59b9e040e5cab6af3fb
     name: nginx
@@ -1143,7 +1153,7 @@ entries:
     version: 0.1.42
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.844589755Z"
+    created: "2025-04-01T07:47:35.64613821Z"
     description: A Helm chart for Kubernetes
     digest: 2731338391ddea7325552c30fa67bf1f7d604277430f77d410d3b3a8c88ad9bf
     name: nginx
@@ -1153,7 +1163,7 @@ entries:
     version: 0.1.41
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.844225978Z"
+    created: "2025-04-01T07:47:35.64575865Z"
     description: A Helm chart for Kubernetes
     digest: 1007fa5b18e32332b313b121f894fe8fbda02fc7b5a3b9cb480dced9a26b5f18
     name: nginx
@@ -1163,7 +1173,7 @@ entries:
     version: 0.1.40
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.843480569Z"
+    created: "2025-04-01T07:47:35.644916725Z"
     description: A Helm chart for Kubernetes
     digest: 190155a121fc1744e1837f48161d2268a3178e717cda7402f0aeef2932a70dd7
     name: nginx
@@ -1173,7 +1183,7 @@ entries:
     version: 0.1.39
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.843095803Z"
+    created: "2025-04-01T07:47:35.644183195Z"
     description: A Helm chart for Kubernetes
     digest: a02a85ed46b86498f47c329d358900ff213049eae8359c64681854dfcab0a6d0
     name: nginx
@@ -1183,7 +1193,7 @@ entries:
     version: 0.1.38
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.842726846Z"
+    created: "2025-04-01T07:47:35.643126248Z"
     description: A Helm chart for Kubernetes
     digest: d4dfb68284ef52739b5121da804acdb3622b7c03d6f622dad8e527e4305d31a4
     name: nginx
@@ -1193,7 +1203,7 @@ entries:
     version: 0.1.37
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.842347018Z"
+    created: "2025-04-01T07:47:35.642759552Z"
     description: A Helm chart for Kubernetes
     digest: e7b1fca17ddd81dfa443d128a48220cc91e27b00dda47c4f920a0c44b8bd5e30
     name: nginx
@@ -1203,7 +1213,7 @@ entries:
     version: 0.1.36
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.841802063Z"
+    created: "2025-04-01T07:47:35.64236853Z"
     description: A Helm chart for Kubernetes
     digest: 59cddd581fe4e63d244e4a579bee5ee1a4a8d71e7b5a57ecf1c3ce44b5e039c0
     name: nginx
@@ -1213,7 +1223,7 @@ entries:
     version: 0.1.35
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.840740883Z"
+    created: "2025-04-01T07:47:35.642005682Z"
     description: A Helm chart for Kubernetes
     digest: fc70c25e54ca8cdd1ca2b0fe591c515c938e7dad35e516d78d9b6701bab70272
     name: nginx
@@ -1223,7 +1233,7 @@ entries:
     version: 0.1.34
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.840381284Z"
+    created: "2025-04-01T07:47:35.641634908Z"
     description: A Helm chart for Kubernetes
     digest: 509cc709759afeaf221e94f8a71b364318fb7cc90a9ac97f38398746751eb567
     name: nginx
@@ -1233,7 +1243,7 @@ entries:
     version: 0.1.33
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.840009912Z"
+    created: "2025-04-01T07:47:35.641247323Z"
     description: A Helm chart for Kubernetes
     digest: 9aaa0b0303f03ad0f754b53ca3d3bf79a2700033c51813c492a29cd4403127de
     name: nginx
@@ -1243,7 +1253,7 @@ entries:
     version: 0.1.32
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.839652907Z"
+    created: "2025-04-01T07:47:35.640884224Z"
     description: A Helm chart for Kubernetes
     digest: 6b51635681646b80fb8481750bbb01e4afdde6d1371431b51445d719ae53b776
     name: nginx
@@ -1253,7 +1263,7 @@ entries:
     version: 0.1.31
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.839295121Z"
+    created: "2025-04-01T07:47:35.640508621Z"
     description: A Helm chart for Kubernetes
     digest: 9ded46309f410056ea6aedb11b7d3efced5eb696ac639057ba1c54c9a9492205
     name: nginx
@@ -1263,7 +1273,7 @@ entries:
     version: 0.1.30
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.838546917Z"
+    created: "2025-04-01T07:47:35.639749651Z"
     description: A Helm chart for Kubernetes
     digest: 634804bc64b06b2a09cda5c906998825f21ae9b7457d3bdcc6ec3dad82fcc898
     name: nginx
@@ -1273,7 +1283,7 @@ entries:
     version: 0.1.29
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.838168272Z"
+    created: "2025-04-01T07:47:35.639357197Z"
     description: A Helm chart for Kubernetes
     digest: 897206355c00aceb07c3653893bfc34eb6ba545706a08b40ae44f65f1122b942
     name: nginx
@@ -1283,7 +1293,7 @@ entries:
     version: 0.1.28
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.837809003Z"
+    created: "2025-04-01T07:47:35.638987015Z"
     description: A Helm chart for Kubernetes
     digest: 7b683845e3114af92911bc13b3edccba48cd7fd415a1f85920e25970bc341fe6
     name: nginx
@@ -1293,7 +1303,7 @@ entries:
     version: 0.1.27
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.837446799Z"
+    created: "2025-04-01T07:47:35.638600131Z"
     description: A Helm chart for Kubernetes
     digest: 8144416c5eb446339b31869901c09f5e8ea08cd604dbe875d1157e3a64a1ec2a
     name: nginx
@@ -1303,7 +1313,7 @@ entries:
     version: 0.1.26
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.83706083Z"
+    created: "2025-04-01T07:47:35.638179364Z"
     description: A Helm chart for Kubernetes
     digest: d819d77ca305fa4bb7b5e446d2541f03b4d7fad8261c809a590df1957e851f68
     name: nginx
@@ -1313,7 +1323,7 @@ entries:
     version: 0.1.25
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.836696712Z"
+    created: "2025-04-01T07:47:35.637749781Z"
     description: A Helm chart for Kubernetes
     digest: 09062cd10a7f4414ab4f833fb844490120ee6e227f3376286797e870515d5311
     name: nginx
@@ -1323,7 +1333,7 @@ entries:
     version: 0.1.24
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.836323847Z"
+    created: "2025-04-01T07:47:35.636545712Z"
     description: A Helm chart for Kubernetes
     digest: 904cb608b523c75d9f9bb348786364419e263eed3ed705811cad5735f30c0003
     name: nginx
@@ -1333,7 +1343,7 @@ entries:
     version: 0.1.23
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.835921267Z"
+    created: "2025-04-01T07:47:35.636150352Z"
     description: A Helm chart for Kubernetes
     digest: 1fac4bf872c9bd752654ffb5ad310fe82023b6be4698b1c1e9170a5385b597a8
     name: nginx
@@ -1343,7 +1353,7 @@ entries:
     version: 0.1.22
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.835531762Z"
+    created: "2025-04-01T07:47:35.635777304Z"
     description: A Helm chart for Kubernetes
     digest: 59ec404f336adeb800ffc2a9a9f0180b1876def33f9c5d030f6c56332226045c
     name: nginx
@@ -1353,7 +1363,7 @@ entries:
     version: 0.1.21
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.834831122Z"
+    created: "2025-04-01T07:47:35.635405639Z"
     description: A Helm chart for Kubernetes
     digest: e4e41dda61a48d6449ee0473aad65d97cf0018e5eabcdfa613e82ab41845079c
     name: nginx
@@ -1363,7 +1373,7 @@ entries:
     version: 0.1.20
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.833540508Z"
+    created: "2025-04-01T07:47:35.634610371Z"
     description: A Helm chart for Kubernetes
     digest: 9dc22f1b0efc10bb2b794a87de47582a2de2ff3b269b9dc5f1ebd2c2ef2b8e9b
     name: nginx
@@ -1373,7 +1383,7 @@ entries:
     version: 0.1.19
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.833118773Z"
+    created: "2025-04-01T07:47:35.634218438Z"
     description: A Helm chart for Kubernetes
     digest: 6c41a0284339ed40aae34f1e603e88ce50923064559e3f52914dfe61d0b64e26
     name: nginx
@@ -1383,7 +1393,7 @@ entries:
     version: 0.1.18
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.832672161Z"
+    created: "2025-04-01T07:47:35.633825392Z"
     description: A Helm chart for Kubernetes
     digest: 68167a05db810ae4bdb52f87390c1e5b83cdf09097d33c614c53ea5fdbe4e922
     name: nginx
@@ -1393,7 +1403,7 @@ entries:
     version: 0.1.17
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.832271415Z"
+    created: "2025-04-01T07:47:35.633440643Z"
     description: A Helm chart for Kubernetes
     digest: b00ebdb6aecbc165725cfd748611d15715277dd711c93d977892771cdfe428af
     name: nginx
@@ -1403,7 +1413,7 @@ entries:
     version: 0.1.16
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.831864026Z"
+    created: "2025-04-01T07:47:35.633031918Z"
     description: A Helm chart for Kubernetes
     digest: 50a5a89b9dc1473cf866606593375541d67b92672fa5a883dc49222e0c85b026
     name: nginx
@@ -1413,7 +1423,7 @@ entries:
     version: 0.1.15
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.831493696Z"
+    created: "2025-04-01T07:47:35.632633172Z"
     description: A Helm chart for Kubernetes
     digest: 0da1b3c1c5748b16ec2c1dbf70d4cf02185548ff0a3a9b85b316610df2ed0e2d
     name: nginx
@@ -1423,7 +1433,7 @@ entries:
     version: 0.1.14
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.831089684Z"
+    created: "2025-04-01T07:47:35.632210301Z"
     description: A Helm chart for Kubernetes
     digest: f8d921199859804f7f77e6667e99aa7f44403c0dac8636a29ed47d55a0e9559a
     name: nginx
@@ -1433,7 +1443,7 @@ entries:
     version: 0.1.13
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.830710147Z"
+    created: "2025-04-01T07:47:35.631826293Z"
     description: A Helm chart for Kubernetes
     digest: 1850d57f2270a281c3c8a74b0932d54f1d4ff06768a4e9f6d9e716a4e681394c
     name: nginx
@@ -1443,7 +1453,7 @@ entries:
     version: 0.1.12
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.830331903Z"
+    created: "2025-04-01T07:47:35.631376972Z"
     description: A Helm chart for Kubernetes
     digest: fcc9569421038c60328e0abc788e698ce04d8154c6934ac3ede77d593157da3c
     name: nginx
@@ -1453,7 +1463,7 @@ entries:
     version: 0.1.11
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.829925195Z"
+    created: "2025-04-01T07:47:35.630943792Z"
     description: A Helm chart for Kubernetes
     digest: 675e871974a271927aa60c2208a942e132fa21ce556f353dde042ec544fc4a29
     name: nginx
@@ -1463,7 +1473,7 @@ entries:
     version: 0.1.10
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.866670568Z"
+    created: "2025-04-01T07:47:35.705759055Z"
     description: A Helm chart for Kubernetes
     digest: fb2d8a42aa0708998c2d64958e6552e1a1c6f31927750b29e81225e7b7cb18aa
     name: nginx
@@ -1473,7 +1483,7 @@ entries:
     version: 0.1.9
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.861721381Z"
+    created: "2025-04-01T07:47:35.700502166Z"
     description: A Helm chart for Kubernetes
     digest: b13054a7e97f4f3ab6082c499f8b9b8f874c4b677362b21a31b81f199a725071
     name: nginx
@@ -1483,7 +1493,7 @@ entries:
     version: 0.1.8
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.857703067Z"
+    created: "2025-04-01T07:47:35.696368473Z"
     description: A Helm chart for Kubernetes
     digest: bcac15b18d8dd0603819df87a32df460900cdf2a41fbc0a5b6e04818e6b9731b
     name: nginx
@@ -1493,7 +1503,7 @@ entries:
     version: 0.1.7
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.85277011Z"
+    created: "2025-04-01T07:47:35.691264781Z"
     description: A Helm chart for Kubernetes
     digest: 0ebde43e2211396e96d04621dd156cca8ea493d8e7f6641b4c2a48a79db23ee1
     name: nginx
@@ -1503,7 +1513,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.848654064Z"
+    created: "2025-04-01T07:47:35.649552026Z"
     description: A Helm chart for Kubernetes
     digest: 1bb7d1831ed6ec891c6430277a62beb68308c135329a4a91d12c0dc79e2f04b0
     name: nginx
@@ -1513,7 +1523,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.843845699Z"
+    created: "2025-04-01T07:47:35.645349114Z"
     description: A Helm chart for Kubernetes
     digest: 3954c2ba74b5c6aa79c44c325927a93e480451e6f27ab20fe9962358a8af55d8
     name: nginx
@@ -1523,7 +1533,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.838912678Z"
+    created: "2025-04-01T07:47:35.640121707Z"
     description: A Helm chart for Kubernetes
     digest: 1ae2c785644f09b06358705f7e1fc605f141416dcc37b3b2429bff4d2a7d06b1
     name: nginx
@@ -1533,7 +1543,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.833905599Z"
+    created: "2025-04-01T07:47:35.634982968Z"
     description: A Helm chart for Kubernetes
     digest: 917c1d7ef37ba964c1269cf301c7482dc1498b1e7ffa88103ca0d3befc97033b
     name: nginx
@@ -1543,7 +1553,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.829532624Z"
+    created: "2025-04-01T07:47:35.63020741Z"
     description: A Helm chart for Kubernetes
     digest: bdefa5b8b340334539bbf72abf7d7d8127faad230959be024e005c4bcc24c671
     name: nginx
@@ -1553,7 +1563,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-01T07:47:26.829110208Z"
+    created: "2025-04-01T07:47:35.628877983Z"
     description: A Helm chart for Kubernetes
     digest: ed4acb6f67d36a30037ce0cb126a87d69125a6ca97399e33c4477521b6b384c0
     name: nginx
@@ -1561,4 +1571,4 @@ entries:
     urls:
     - https://ramyerubandi1.github.io/docs/nginx-0.1.0.tgz
     version: 0.1.0
-generated: "2025-04-01T07:47:26.828527843Z"
+generated: "2025-04-01T07:47:35.628302056Z"
