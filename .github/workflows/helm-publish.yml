@@ -19,31 +19,18 @@ jobs:
         run: |
           curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
 
-      - name: Increment Chart Version
-        id: version
-        run: |
-          VERSION=$(grep '^version:' charts/nginx/Chart.yaml | awk '{print $2}')
-          IFS='.' read -r -a VERSION_ARRAY <<< "$VERSION"
-          PATCH=${VERSION_ARRAY[2]}
-          NEW_PATCH=$((PATCH + 1))
-          NEW_VERSION="${VERSION_ARRAY[0]}.${VERSION_ARRAY[1]}.$NEW_PATCH"
-          echo "New version: $NEW_VERSION"
-          sed -i "s/^version: $VERSION$/version: $NEW_VERSION/" charts/nginx/Chart.yaml
-
       - name: Package Helm Chart
         run: |
+          
           helm package charts/nginx -d docs/
+
+
           helm repo index docs --url https://ramyerubandi1.github.io/docs/
 
       - name: Commit and Push Changes
         run: |
           git config --global user.name "ramy"
           git config --global user.email "rmrbnd@gmail.com"
-          
-          git add docs/ charts/nginx/Chart.yaml
-          git commit -m "Auto-publish Helm chart version $NEW_VERSION" || echo "No changes to commit"
-          
-          # Set the token for authentication and push the changes
-          git config --global url."https://${{ secrets.GH_PAT }}@github.com".insteadOf "https://github.com"
-          
-          git push origin main
+          git add docs/
+          git commit -m "Auto-publish Helm chart" || echo "No changes to commit"
+          git push
