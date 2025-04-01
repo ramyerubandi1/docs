@@ -4,8 +4,9 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'charts/**'  # Trigger when any file in charts directory changes
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
@@ -13,48 +14,44 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.GH_PAT }}
 
       - name: Install Helm
         run: |
           curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
 
+      - name: Increment Chart Version
+        id: version
+        run: |
+          # Extract the current version from Chart.yaml
+          VERSION=$(grep '^version:' charts/nginx/Chart.yaml | awk '{print $2}')
+          
+          # Split version into major, minor, and patch
+          IFS='.' read -r -a VERSION_ARRAY <<< "$VERSION"
+          PATCH=${VERSION_ARRAY[2]}
+          
+          # Increment the patch version
+          NEW_PATCH=$((PATCH + 1))
+          
+          # Update the version in Chart.yaml (maintain major.minor and increment patch)
+          NEW_VERSION="${VERSION_ARRAY[0]}.${VERSION_ARRAY[1]}.$NEW_PATCH"
+          echo "New version: $NEW_VERSION"
+          
+          # Replace version in Chart.yaml
+          sed -i "s/^version: $VERSION$/version: $NEW_VERSION/" charts/nginx/Chart.yaml
+
       - name: Package Helm Chart
         run: |
-          mkdir -p /tmp/helm-charts
-          helm package charts/nginx -d /tmp/helm-charts/
-
-      - name: Compare and Replace Helm Chart
-        id: compare
-        run: |
-          NEW_TGZ=$(ls /tmp/helm-charts/nginx-*.tgz)
-          OLD_TGZ=$(ls docs/nginx-*.tgz 2>/dev/null || echo "")
-
-          if [ -z "$OLD_TGZ" ]; then
-            echo "CHANGED=true" >> $GITHUB_ENV  # No old .tgz file, so it's new
-          elif ! cmp -s "$NEW_TGZ" "$OLD_TGZ"; then
-            echo "CHANGED=true" >> $GITHUB_ENV  # Files are different
-            rm -f "$OLD_TGZ"  # Remove the old file
-          else
-            echo "CHANGED=false" >> $GITHUB_ENV  # No changes
-          fi
-
-      - name: Move new package if changed
-        if: env.CHANGED == 'true'
-        run: |
-          mv /tmp/helm-charts/nginx-*.tgz docs/
+          # Package the chart with the new version
+          helm package charts/nginx -d docs/
+          
+          # Generate or update the index file
           helm repo index docs --url https://ramyerubandi1.github.io/docs/
 
       - name: Commit and Push Changes
-        if: env.CHANGED == 'true'
         run: |
           git config --global user.name "ramy"
           git config --global user.email "rmrbnd@gmail.com"
           
-          git fetch origin main  # Fetch latest changes
-          git reset --soft origin/main  # Align with remote branch
-          
-          git add docs/
-          git commit -m "Auto-publish Helm chart" || echo "No changes to commit"
-          git push origin main --force-with-lease  # Safe push
+          git add docs/ charts/nginx/Chart.yaml
+          git commit -m "Auto-publish Helm chart version $NEW_VERSION" || echo "No changes to commit"
+          git push
