@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'charts/nginx/**'  # Only trigger when changes occur in this directory
+      - 'charts/**'  # Trigger when any file in charts directory changes
 
 jobs:
   build:
@@ -20,19 +20,30 @@ jobs:
         run: |
           curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
 
-      - name: Check if Helm chart has changed
-        id: changes
+      - name: Package Helm Chart
         run: |
-          if git diff --name-only HEAD^ HEAD | grep -q "^charts/nginx/"; then
-            echo "CHANGED=true" >> $GITHUB_ENV
+          mkdir -p /tmp/helm-charts
+          helm package charts/nginx -d /tmp/helm-charts/
+
+      - name: Compare and Replace Helm Chart
+        id: compare
+        run: |
+          NEW_TGZ=$(ls /tmp/helm-charts/nginx-*.tgz)
+          OLD_TGZ=$(ls docs/nginx-*.tgz 2>/dev/null || echo "")
+
+          if [ -z "$OLD_TGZ" ]; then
+            echo "CHANGED=true" >> $GITHUB_ENV  # No old .tgz file, so it's new
+          elif ! cmp -s "$NEW_TGZ" "$OLD_TGZ"; then
+            echo "CHANGED=true" >> $GITHUB_ENV  # Files are different
+            rm -f "$OLD_TGZ"  # Remove the old file
           else
-            echo "CHANGED=false" >> $GITHUB_ENV
+            echo "CHANGED=false" >> $GITHUB_ENV  # No changes
           fi
 
-      - name: Package Helm Chart
+      - name: Move new package if changed
         if: env.CHANGED == 'true'
         run: |
-          helm package charts/nginx -d docs/
+          mv /tmp/helm-charts/nginx-*.tgz docs/
           helm repo index docs --url https://ramyerubandi1.github.io/docs/
 
       - name: Commit and Push Changes
@@ -41,12 +52,9 @@ jobs:
           git config --global user.name "ramy"
           git config --global user.email "rmrbnd@gmail.com"
           
-          git fetch origin main  # Fetch the latest changes from the remote repository
-          git reset --soft origin/main  # Reset local branch to match the remote branch
+          git fetch origin main  # Fetch latest changes
+          git reset --soft origin/main  # Align with remote branch
           
           git add docs/
           git commit -m "Auto-publish Helm chart" || echo "No changes to commit"
-          
-          git push origin main --force-with-lease  # Push changes safely
-
-
+          git push origin main --force-with-lease  # Safe push
