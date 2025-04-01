@@ -21,22 +21,29 @@ jobs:
         run: |
           curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
 
-      - name: Get current chart version
-        id: get_version
+      - name: Get the last packaged version
+        id: get_last_version
         run: |
-          VERSION=$(grep 'version:' charts/nginx/Chart.yaml | awk '{print $2}')
-          echo "Current chart version: $VERSION"
-          echo "VERSION=$VERSION" >> $GITHUB_ENV
+          # Find the latest .tgz file in the docs/ directory
+          LAST_VERSION=$(ls docs/nginx-*.tgz | sort -V | tail -n 1 | sed 's/.*-\(.*\)\.tgz/\1/')
+          
+          # If no previous version exists, start with 0.1.0
+          if [ -z "$LAST_VERSION" ]; then
+            LAST_VERSION="0.1.0"
+          fi
+
+          echo "Last packaged version: $LAST_VERSION"
+          echo "LAST_VERSION=$LAST_VERSION" >> $GITHUB_ENV
 
       - name: Increment Chart Version
         id: increment_version
         run: |
           # Increment the patch version by 1
-          VERSION=$(echo ${{ env.VERSION }} | awk -F. -v OFS=. '{$NF++; print $0}')
+          VERSION=$(echo ${{ env.LAST_VERSION }} | awk -F. -v OFS=. '{$NF++; print $0}')
           echo "New version: $VERSION"
-          
+
           # Update the version in the Chart.yaml file
-          sed -i "s/version: ${{ env.VERSION }}/version: $VERSION/" charts/nginx/Chart.yaml
+          sed -i "s/version: ${{ env.LAST_VERSION }}/version: $VERSION/" charts/nginx/Chart.yaml
           echo "VERSION=$VERSION" >> $GITHUB_ENV
 
       - name: Package Helm Chart
