@@ -31,7 +31,8 @@ jobs:
       - name: Check if only version in Chart.yaml is changed
         id: check_version_change
         run: |
-          # Get the list of changed files in the current commit
+          # Get the list of changed files in the current commit using GitHub Actions context
+          git fetch --depth=2  # Fetch previous commit
           CHANGED_FILES=$(git diff --name-only $GITHUB_SHA^ $GITHUB_SHA)
           echo "Changed files: $CHANGED_FILES"
 
