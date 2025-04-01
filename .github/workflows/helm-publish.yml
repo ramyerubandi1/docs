@@ -6,7 +6,6 @@ on:
       - main
     paths:
       - 'charts/**'  # Only trigger when files in the `charts/` directory change
-
   pull_request:
     branches:
       - main
@@ -21,6 +20,13 @@ jobs:
         uses: actions/checkout@v3
         with:
           token: ${{ secrets.GH_PAT }}
+
+      - name: Check if the commit is from the workflow itself
+        run: |
+          if [ "${GITHUB_ACTOR}" == "github-actions[bot]" ]; then
+            echo "Skipping workflow because this is a commit made by the workflow itself."
+            exit 0
+          fi
 
       - name: Install Helm
         run: |
