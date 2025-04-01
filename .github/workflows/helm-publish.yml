@@ -36,11 +36,11 @@ jobs:
         id: check_version_change
         run: |
           # Get the list of changed files in the current commit
-          CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD)
+          CHANGED_FILES=$(git diff --name-only $GITHUB_SHA^ $GITHUB_SHA)
           echo "Changed files: $CHANGED_FILES"
 
           # Check if the only change is to version/appVersion in Chart.yaml
-          if [[ "$CHANGED_FILES" =~ "charts/nginx/Chart.yaml" && ! "$CHANGED_FILES" =~ "\.version\|appVersion" ]]; then
+          if [[ "$CHANGED_FILES" =~ "charts/nginx/Chart.yaml" && ! "$CHANGED_FILES" =~ "version|appVersion" ]]; then
             echo "Only version or appVersion changed, skipping further workflow steps."
             echo "skip=true" >> $GITHUB_ENV
           fi
