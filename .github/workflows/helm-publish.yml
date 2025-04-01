@@ -4,9 +4,14 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'charts/**'  # Only trigger when files in the `charts/` directory change
+
   pull_request:
     branches:
       - main
+    paths:
+      - 'charts/**'  # Only trigger when files in the `charts/` directory change
 
 jobs:
   build:
