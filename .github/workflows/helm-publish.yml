@@ -5,12 +5,12 @@ on:
     branches:
       - main
     paths:
-      - 'charts/**'  # Only trigger when files in the `charts/` directory change
+      - 'charts/nginx/**'  # Trigger only when any files in the charts/nginx/ directory change
   pull_request:
     branches:
       - main
     paths:
-      - 'charts/**'  # Only trigger when files in the `charts/` directory change
+      - 'charts/nginx/**'  # Trigger only when any files in the charts/nginx/ directory change
 
 jobs:
   build:
@@ -52,10 +52,15 @@ jobs:
           NEW_VERSION="$major.$minor.$patch"
           echo "New version: $NEW_VERSION"
           
-          # Update the version in Chart.yaml
-          sed -i "s/version: ${{ env.VERSION }}/version: $NEW_VERSION/" charts/nginx/Chart.yaml
-          echo "VERSION=$NEW_VERSION" >> $GITHUB_ENV
-          echo "Updated Chart version to: $NEW_VERSION"
+          # Update the version in Chart.yaml if it's different
+          if [ "$NEW_VERSION" != "$VERSION" ]; then
+            sed -i "s/version: ${{ env.VERSION }}/version: $NEW_VERSION/" charts/nginx/Chart.yaml
+            echo "VERSION=$NEW_VERSION" >> $GITHUB_ENV
+            echo "Updated Chart version to: $NEW_VERSION"
+          else
+            echo "No version change detected, skipping the commit."
+            exit 0
+          fi
 
       - name: Package Helm Chart
         run: |
@@ -64,14 +69,14 @@ jobs:
 
       - name: Commit and Push Changes
         run: |
-          # Check if changes were made in the charts directory
-          git diff --exit-code charts/nginx/Chart.yaml || {
-            echo "Changes detected, committing and pushing new version."
+          # Only commit and push if there are changes
+          git diff --exit-code charts/nginx/ || {
+            echo "Changes detected in charts/nginx, committing and pushing new version."
 
             git config --global user.name "ramy"
             git config --global user.email "rmrbnd@gmail.com"
 
-            git add charts/nginx/Chart.yaml docs/
+            git add charts/nginx/ docs/
             git commit -m "Auto-publish Helm chart version ${{ env.VERSION }}" || echo "No changes to commit"
 
             # Prevent workflow trigger loop by using GITHUB_TOKEN to push changes
