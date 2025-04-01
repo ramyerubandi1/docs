@@ -7,7 +7,7 @@ replicaCount: 53
 
 # This sets the container image more information can be found here: https://kubernetes.io/docs/concepts/containers/images/
 image:
-  repository: jeeeee
+  repository: jeeee
   tag: "latest"
   # This sets the pull policy for images.
   pullPolicy: Always
