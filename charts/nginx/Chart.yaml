@@ -1,1 +1,3 @@
-404: Not Found
+apiVersion: v2
+name: nginx  # <-- This field must be present
+version: 1.0.0
