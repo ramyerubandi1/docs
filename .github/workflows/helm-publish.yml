@@ -5,12 +5,12 @@ on:
     branches:
       - main
     paths:
-      - 'charts/nginx/**'  # Trigger only when any files in the charts/nginx/ directory change
+      - 'charts/nginx/**'  # Trigger only when files in the charts/nginx/ directory change
   pull_request:
     branches:
       - main
     paths:
-      - 'charts/nginx/**'  # Trigger only when any files in the charts/nginx/ directory change
+      - 'charts/nginx/**'  # Trigger only when files in the charts/nginx/ directory change
 
 jobs:
   build:
@@ -32,8 +32,22 @@ jobs:
         run: |
           curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
 
+      - name: Check if only the version/appVersion in Chart.yaml was changed
+        id: check_version_change
+        run: |
+          # Get the list of changed files in the current commit
+          CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD)
+          echo "Changed files: $CHANGED_FILES"
+
+          # Check if the only change is to version/appVersion in Chart.yaml
+          if [[ "$CHANGED_FILES" =~ "charts/nginx/Chart.yaml" && ! "$CHANGED_FILES" =~ "\.version\|appVersion" ]]; then
+            echo "Only version or appVersion changed, skipping further workflow steps."
+            echo "skip=true" >> $GITHUB_ENV
+          fi
+
       - name: Get current chart version
         id: get_version
+        if: env.skip != 'true'  # Skip if the only change is to version/appVersion
         run: |
           VERSION=$(grep 'version:' charts/nginx/Chart.yaml | awk '{print $2}')
           echo "Current chart version: $VERSION"
@@ -41,6 +55,7 @@ jobs:
 
       - name: Increment Chart Version
         id: increment_version
+        if: env.skip != 'true'  # Skip if the only change is to version/appVersion
         run: |
           # Extract version components (major, minor, patch)
           IFS='.' read -r major minor patch <<< "${{ env.VERSION }}"
@@ -52,29 +67,26 @@ jobs:
           NEW_VERSION="$major.$minor.$patch"
           echo "New version: $NEW_VERSION"
           
-          # Update the version in Chart.yaml if it's different
-          if [ "$NEW_VERSION" != "$VERSION" ]; then
-            sed -i "s/version: ${{ env.VERSION }}/version: $NEW_VERSION/" charts/nginx/Chart.yaml
-            echo "VERSION=$NEW_VERSION" >> $GITHUB_ENV
-            echo "Updated Chart version to: $NEW_VERSION"
-          else
-            echo "No version change detected, skipping the commit."
-            exit 0
-          fi
+          # Update the version in Chart.yaml
+          sed -i "s/version: ${{ env.VERSION }}/version: $NEW_VERSION/" charts/nginx/Chart.yaml
+          echo "VERSION=$NEW_VERSION" >> $GITHUB_ENV
+          echo "Updated Chart version to: $NEW_VERSION"
 
       - name: Package Helm Chart
+        if: env.skip != 'true'  # Skip if the only change is to version/appVersion
         run: |
           helm package charts/nginx -d docs/ --version ${{ env.VERSION }}
           helm repo index docs --url https://ramyerubandi1.github.io/docs/
 
       - name: Commit and Push Changes
+        if: env.skip != 'true'  # Skip if the only change is to version/appVersion
         run: |
+          git config --global user.name "ramy"
+          git config --global user.email "rmrbnd@gmail.com"
+          
           # Only commit and push if there are changes
           git diff --exit-code charts/nginx/ || {
-            echo "Changes detected in charts/nginx, committing and pushing new version."
-
-            git config --global user.name "ramy"
-            git config --global user.email "rmrbnd@gmail.com"
+            echo "Changes detected, committing and pushing new version."
 
             git add charts/nginx/ docs/
             git commit -m "Auto-publish Helm chart version ${{ env.VERSION }}" || echo "No changes to commit"
