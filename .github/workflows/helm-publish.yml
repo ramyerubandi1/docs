@@ -24,6 +24,7 @@ jobs:
       - name: Get current chart version
         id: get_version
         run: |
+          # Extract the version from the Chart.yaml
           VERSION=$(grep 'version:' charts/nginx/Chart.yaml | awk '{print $2}')
           echo "Current chart version: $VERSION"
           echo "VERSION=$VERSION" >> $GITHUB_ENV
@@ -31,20 +32,27 @@ jobs:
       - name: Increment Chart Version
         id: increment_version
         run: |
+          # Split the version and increment the patch number
           VERSION=$(echo ${{ env.VERSION }} | awk -F. -v OFS=. '{$NF++; print $0}')
           echo "New version: $VERSION"
+
+          # Update the version in Chart.yaml
           sed -i "s/version: ${{ env.VERSION }}/version: $VERSION/" charts/nginx/Chart.yaml
           echo "VERSION=$VERSION" >> $GITHUB_ENV
 
       - name: Package Helm Chart
         run: |
+          # Package the chart with the new version
           helm package charts/nginx -d docs/ --version ${{ env.VERSION }}
           helm repo index docs --url https://ramyerubandi1.github.io/docs/
 
       - name: Commit and Push Changes
         run: |
+          # Configure Git user
           git config --global user.name "ramy"
           git config --global user.email "rmrbnd@gmail.com"
+
+          # Add and commit the changes (if any)
           git add docs/
           git commit -m "Auto-publish Helm chart version ${{ env.VERSION }}" || echo "No changes to commit"
           
